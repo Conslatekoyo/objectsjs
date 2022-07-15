@@ -37,14 +37,13 @@ this.fruit = fruit
 this.quantity = quantity
 this.fruitPriceList = {"orange": 30, "mango": 15, "avocado": 40 };
 this.getTotalCost = function () {
-return ` ${quantity} ${fruit} for KES ${quantity * this.price}`
+return ` ${quantity} ${fruit} for KES ${quantity * this.fruitPriceList.avocado}`
 }
 }
 }
-KioskCalc.prototype.price = 40;
     
-var kiosk = new KioskCalc('avocado',5);
-console.log(kiosk.getTotalCost());
+var shop = new KioskCalc('avocado',5);
+console.log(shop.getTotalCost());
 
 
 
